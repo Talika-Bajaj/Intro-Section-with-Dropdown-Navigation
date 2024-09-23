@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <title>Intro section with dropdown navigation</title>
+</head>
+
+<body>
+  <header>
+    <nav class="nav-bar">
+      <img src="images/logo.svg" alt="logo" id="logo">
+      <img src="images/icon-menu.svg" alt="icon-menu" id="icon-menu">
+      <div class="overlay"></div>
+      <div class="nav-menu">
+        <img src="images/icon-close-menu.svg" alt="icon-close-menu" id="close-menu">
+        <ul class="nav-list">
+          <li class="nav-item fearures extend">Features
+            <img src="images/icon-arrow-down.svg" alt="icon-arrow-down" class="arrow-down">
+          </li>
+          <ul class="feature-menu extend-menu">
+            <li class="menu-item">
+              <img src="images/icon-todo.svg" alt="icon-todo">
+              Todo List
+            </li>
+            <li class="menu-item">
+              <img src="images/icon-calendar.svg" alt="icon-calendar">
+              Calendar
+            </li>
+            <li class="menu-item">
+              <img src="images/icon-reminders.svg" alt="icon-reminders">
+              Reminders
+            </li>
+            <li class="menu-item">
+              <img src="images/icon-planning.svg" alt="icon-planning">
+              Planning
+            </li>
+          </ul>
+          <li class="nav-item company extend">Company
+            <img src="images/icon-arrow-down.svg" alt="icon-arrow-down" class="arrow-down">
+          </li>
+          <ul class="company-options extend-menu">
+            <li class="menu-item">History</li>
+            <li class="menu-item">Our Team</li>
+            <li class="menu-item">Blog</li>
+          </ul>
+          <li class="nav-item">Careers</li>
+          <li class="nav-item">About</li>
+        </ul>
+        <div class="buttons">
+          <button class="login">Login</button>
+          <button class="register">Register</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <div class="container">
+
+      <div class="left-side">
+        <div class="data">
+          <h1>Make remote work</h1>
+          <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch
+            productivity soar.
+          </p>
+          <button class="learn-btn">Learn more</button>
+        </div>
+        <div class="icons">
+          <img src="images/client-databiz.svg" alt="client-databiz">
+          <img src="images/client-audiophile.svg" alt="client-audiophile">
+          <img src="images/client-meet.svg" alt="client-meet">
+          <img src="images/client-maker.svg" alt="client-maker">
+        </div>
+      </div>
+
+      <div class="right-side">
+        <img src="images/image-hero-mobile.png" alt="image-hero-mobile" id="hero-image">
+      </div>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
