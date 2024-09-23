@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    padding: 30px 25px;
+    padding: 25px 30px;
 }
 
 .nav-bar {
@@ -229,14 +229,17 @@ h1 {
 p {
     line-height: 1.8;
     color: var(--Medium_Gray);
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .learn-btn {
     background-color: var(--Almost_Black);
     color: var(--Almost_White);
-    padding: 15px 30px;
+    padding: 18px 30px;
     border-radius: 12px;
     font-weight: 600;
+    font-size: 18px;
 }
 
 .icons {
