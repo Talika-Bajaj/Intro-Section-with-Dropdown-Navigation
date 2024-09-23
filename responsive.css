@@ -31,7 +31,7 @@
   }
 
   .left-side {
-    height: 615px;
+    height: 645px;
     /* width: 80%;
     margin: auto; */
   }
@@ -92,10 +92,10 @@
 
 @media screen and (width > 1366px) {
   .container {
-    padding: 25px 150px 65px 160px;
+    padding: 55px 150px 65px 160px;
     width: 100%;
     justify-content: space-between;
-    grid-template-columns: 545px 545px;
+    grid-template-columns: 562px 562px;
   }
 }
 
