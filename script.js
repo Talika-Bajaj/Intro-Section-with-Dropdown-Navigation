@@ -7,7 +7,6 @@ const buttonsGroup = document.querySelector('.buttons');
 const overlay = document.querySelector('.overlay');
 const menuIcon = document.getElementById('icon-menu');
 const closeIcon = document.getElementById('close-menu');
-const heroImage = document.getElementById('hero-image');
 
 extend.forEach((ele, index) => {
     ele.addEventListener('click', (e) => {
@@ -68,9 +67,6 @@ function overlayDiv() {
         buttonsGroup.style.flexDirection = 'row';
     }
 
-    if (window.innerWidth >= 1060) {
-        heroImage.src = 'images/image-hero-desktop.png';
-    }
 
     if (window.innerWidth == 912 && window.innerHeight == 1368 || window.innerWidth == 1024 && window.innerHeight == 1366 || window.innerWidth == 1024 && window.innerHeight == 600) {
         heroImage.src = 'images/image-hero-mobile.png';
@@ -81,3 +77,21 @@ function overlayDiv() {
 overlayDiv();
 
 window.addEventListener('resize', overlayDiv);
+
+function updateImage(params) {
+    const heroImage = document.getElementById('hero-image');
+    // const image = document.getElementById('web-image');
+
+    smallSrc = "images/image-hero-mobile.png"
+    bigSrc = "images/image-hero-desktop.png"
+
+    if (window.innerWidth >= 1060) {
+        heroImage.src = bigSrc;
+    } else {
+        heroImage.src = smallSrc;
+    }
+}
+
+updateImage();
+
+window.addEventListener('resize', updateImage);
